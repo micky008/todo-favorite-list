@@ -15,6 +15,10 @@ h1, p {
   color: #5d5c5c;
 }
 
+p {
+  font-size: 19px;
+}
+
 @media screen and (max-width: 750px) {
   .containerHome {
     padding: 10px;
