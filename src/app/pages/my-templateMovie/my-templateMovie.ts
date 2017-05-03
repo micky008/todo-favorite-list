@@ -21,22 +21,29 @@ export class AppTemplateMovie {
   private visible: boolean = true
 
   deleteTodo() {
-    this.visible = false;
+    if(!this.isInTodoList) {
+      this.visible = false;
+    }
     this.idFilmEvent.emit(this.movie.getId())
   }
 
   invisible(visible : boolean){
-    this.visible = visible
+    if(!this.isInTodoList){
+      this.visible = visible;
+    }
   }
 
   addFavorite() {
     if (this.movie.getFavorite()) {
       this.movie.invertFavorite()
-      this.deleteTodo()
+      if(!this.isInTodoList){
+        this.visible = false;
+      }
       Session.reset('' + this.movie.getId())
     } else {
       this.movie.invertFavorite()
       Session.put('' + this.movie.getId(), this.movie);
     }
+
   }
 }

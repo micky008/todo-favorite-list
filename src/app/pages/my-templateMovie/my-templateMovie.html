@@ -4,7 +4,7 @@
   </div>
   <div class="infoFilm">
     <span>{{movie.title}}</span>
-    <span class="fa fa-heart" aria-hidden="true" (click)="addFavorite()"></span>
+    <span class="fa fa-heart  {{movie.getFavorite() ? 'heartRed':'heartNormal'}}" aria-hidden="true" (click)="addFavorite()"></span>
     <span>{{movie.author}}</span>
     <span>{{movie.descr}}</span>
   </div>

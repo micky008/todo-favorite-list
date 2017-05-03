@@ -28,22 +28,23 @@ img {
   display: inline-block;
 }
 
-.infoFilm span:nth-child(2) {
+.heartNormal {
   color: #ababab;
 }
 
-.infoFilm span:nth-child(2):hover {
+.heartNormal:hover {
   color: #f95428;
   cursor: pointer;
 }
 
+.heartRed {
+  color: #f95428;
+}
+
+
 .infoFilm span:nth-child(3) {
   display: block;
   margin-bottom: 10px;
-}
-
-.infoFilm span:nth-child(4) {
-  font-size: 11px;
 }
 
 .delete-icon {
