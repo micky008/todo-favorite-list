@@ -1,0 +1,23 @@
+.containerHome {
+  background-color: #ffdb9d;
+  padding: 55px;
+}
+
+.picture, img {
+  width: 70px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+h1, p {
+  font-family: 'Lobster', cursive, Arial, sans-serif;
+  text-align: center;
+  color: #5d5c5c;
+}
+
+@media screen and (max-width: 750px) {
+  .containerHome {
+    padding: 10px;
+  }
+
+}

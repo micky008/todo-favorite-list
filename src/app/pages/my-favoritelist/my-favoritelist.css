@@ -1,0 +1,26 @@
+.containerFavoriteList {
+  background-color: #ffdb9d;
+  padding: 55px;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+}
+
+p {
+  font-family: 'Lobster', cursive, Arial, sans-serif;
+  text-align: center;
+  color: #5d5c5c;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 750px) {
+
+  .containerFavoriteList {
+    padding: 10px;
+  }
+}

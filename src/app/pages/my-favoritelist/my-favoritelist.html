@@ -1,0 +1,10 @@
+<div class="containerFavoriteList">
+  <div>
+    <p>Here is your favorite films</p>
+  </div>
+  <ul>
+    <li *ngFor="let todo of moviesFavorite"   >
+      <my-templateMovie [movie] = todo [isInTodoList] = false></my-templateMovie>
+    </li>
+  </ul>
+</div>

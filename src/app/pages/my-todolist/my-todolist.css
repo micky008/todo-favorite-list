@@ -1,0 +1,73 @@
+.todos {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+.errorMessage {
+  width: 40%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #f7b239;
+  border-radius: 3px;
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+
+.formulaire {
+  width: 282px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+}
+
+input {
+  border: 0;
+  border-radius: 3px;
+  padding: 2px;
+}
+
+button {
+  border :0;
+  border-radius: 3px;
+  background-color: #f95428;
+  color: white;
+}
+
+.mtop20 {
+  width: 13%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+@media screen and (max-width: 750px) {
+
+  .formulaire {
+    width: 100%;
+  }
+
+  input {
+    width: 100%;
+  }
+  .mtop20 {
+    width: 100%;
+  }
+
+  form button {
+    margin-top: 20px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  ul {
+    padding: 0;
+  }
+}

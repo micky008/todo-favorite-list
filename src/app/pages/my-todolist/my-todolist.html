@@ -1,0 +1,27 @@
+<div class="todos">
+
+    <span  *ngIf="error">
+      <p class="errorMessage">Hey ! Are you sure that this film exist ?</p>
+    </span>
+
+  <div class="formulaire">
+    <form (submit)="addTodo($event)">
+      <input [(ngModel)]="newTodo" (keyup.enter)="newTodo=''" [typeahead]="movies"  class="textfield" name="newTodo" title="">
+      <button  type="submit" [disabled]="newTodo===''" >Add to the list</button>
+    </form>
+  </div>
+
+  <ul>
+    <li *ngFor="let todo of todos">
+      <my-templateMovie [movie] = todo [isInTodoList] = true (idFilmEvent) = "deleteTodo($event)"></my-templateMovie>
+    </li>
+  </ul>
+
+  <div class="mtop20">
+    <button (click)="deleteList()" >Delete List</button>
+  </div>
+
+
+</div>
+
+

@@ -1,0 +1,12 @@
+<div *ngIf="visible && movie != null" class="containerTemplateMovie">
+  <div class="pictureFilm">
+    <img src="{{movie.image}}"/>
+  </div>
+  <div class="infoFilm">
+    <span>{{movie.title}}</span>
+    <span class="fa fa-heart" aria-hidden="true" (click)="addFavorite()"></span>
+    <span>{{movie.author}}</span>
+    <span>{{movie.descr}}</span>
+  </div>
+    <span *ngIf="isInTodoList" (click)="deleteTodo()" class="delete-icon fa fa-times" aria-hidden="true"></span>
+</div>
